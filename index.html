@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="stylesheet" href="styles.css/style.css">
+    <title>Personal Portfolio Template</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <!-- to be implemented hamburger menu in the future -->
+        <p id="logo">ELYSSON TANAKA</p>
+        <ul>
+            <li><a href="#top">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="navbar-sm">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fas fa-envelope-open-text"></i></a>
+        </div>
+    </nav>
+
+    <section id="welcome-section">
+        <div id="welcome-container">
+            <img src="/assets/images/175671965_10159148298763158_6960046388172000521_n.jpg" alt="profile picture">
+            <br><br>
+            <h1>Hi! My name is Elysson</h1>
+            <p id="about-title">
+                <em>I'M A FRONT-END DEVELOPER</em>
+            </p>
+            <p id="description">
+                I have an electrical engineering background which I
+                believe is directly related to programming.
+                I love the problem solving aspect of being a developer,
+                always learning something new with every new challenge.
+
+            </p>
+
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>SKILLS</h2>
+        <div id="skills-container">
+            <div class="skills-box">
+                <i class="devicon-html5-plain"></i>
+                <p>HTML5</p>
+            </div>
+            <div class="skills-box">
+                <i class="devicon-css3-plain"></i>
+                <p>CSS3</p>
+            </div>
+            <div class="skills-box">
+                <i class="devicon-javascript-plain"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skills-box">
+                <i class="devicon-bootstrap-plain"></i>
+                <p>Bootstrap</p>
+            </div>
+            <div class="skills-box">
+                <i class="devicon-sass-original"></i>
+                <p>SASS</p>
+            </div>
+            <div class="skills-box">
+                <i class="devicon-jquery-plain"></i>
+                <p>JQuery</p>
+            </div>
+            <div class="skills-box">
+                <i class="devicon-react-original"></i>
+                <p>React</p>
+            </div>
+            <div class="skills-box">
+                <i class="devicon-git-plain"></i>
+                <p>Git</p>
+            </div>
+            <div class="skills-box">
+                <i class="devicon-github-original"></i>
+                <p>GitHub</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div id="projects-title">
+            <h2>PROJECTS</h2>
+        </div>
+        <div id="projects-container">
+            <div class="project-tile"><a href="#">
+                    <div class="project-image">
+                        <img src="/assets/images/brucelee_page.JPG" alt="">
+                    </div>
+                    <div class="project-name">
+                        <h3>Bruce Lee Tribute Page</h3>
+                    </div>
+                </a></div>
+            <div class="project-tile"><a href="#">
+                    <div class="project-image">
+                        <img src="/assets/images/form_survey1.JPG" alt="">
+                    </div>
+                    <div class="project-name">
+                        <h3>Boxing Gym Survey Form</h3>
+                    </div>
+                </a></div>
+            <div class="project-tile"><a href="#">
+                    <div class="project-image">
+                        <img src="/assets/images/guitar_shop1.JPG" alt="">
+                    </div>
+                    <div class="project-name">
+                        <h3>Guitar Shop Landing Page</h3>
+                    </div>
+                </a></div>
+            <div class="project-tile"><a href="#">
+                    <div class="project-image">
+                        <img src="/assets/images/fcc_tech_doc_clone1.JPG" alt="">
+                    </div>
+                    <div class="project-name">
+                        <h3>FCC Tech. Documentation Clone</h3>
+                    </div>
+                </a></div>
+            <div class="project-tile"><a href="#">
+                    <div class="project-image">
+                        <img src="/assets/images/coming_soon1.jpg" alt="">
+                    </div>
+                    <div class="project-name">
+                        <h3>Coming soon...</h3>
+                    </div>
+                </a></div>
+            <div class="project-tile"><a href="#">
+                    <div class="project-image">
+                        <img src="/assets/images/coming_soon1.jpg" alt="">
+                    </div>
+                    <div class="project-name">
+                        <h3>Coming soon...</h3>
+                    </div>
+                </a></div>
+        </div>
+        <div id="repo">
+            <a href="" id="profile-link" target="_blank"><i class="fab fa-github"></i> More projects ></a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div id="contact-container">
+            <h2>LET'S WORK TOGETHER</h2>
+            <form action="#" id="form-container">
+                <div id="name-container">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" placeholder="Enter your Name" required><br>
+                </div>
+                <div id="email-container">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" placeholder="Enter your Email"><br>
+                </div>
+                <div id="message-container">
+                    <label for="message">Message</label><br>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Just drop me a line!"></textarea>
+                </div>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div id="social-media">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <div id="copyright">
+            &#169 Designed and built by Elysson Tanaka - 2022 | Images: Unsplash
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/401d0a56eb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

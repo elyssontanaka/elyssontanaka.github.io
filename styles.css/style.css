@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+:root {
+    --main-color: #54b689;
+    --main-text-color: #FFF;
+    --border-color: #999;
+    --bg-color: #1e2a3a;
+    --bio-border-color: #293544;
+    --about-bg-color: #111821;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+    color: var(--main-text-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+}
+
+#navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px 10px 0;
+
+}
+
+#navbar ul {
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+    bottom: 3px;
+}
+
+#navbar {
+    background: aquamarine;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#logo {
+    display: inline-block;
+    font-size: 2em;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Gruppo', cursive;
+    padding: 10px 0 10px 10px;
+}
+
+#navbar-sm {
+    float: right;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+.fab, .fas {
+    padding-left: 5px;
+    color: black;
+}
+
+#welcome-section {
+    background: linear-gradient(rgba(29, 69, 75, 0.8), rgba(29, 69, 75, 0.8)), url("/assets/images/alex-knight-Ys-DBJeX0nE-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.75;
+    height: 100vh;
+    text-align: center;
+}
+
+#welcome-container img {
+    width: 30vh;
+    border-radius: 50%;
+}
+
+#about-title {
+    color: aqua;
+    font-weight: bold;
+    padding-bottom: 2vh;
+    font-size: 1.5em;
+}
+
+#welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20vh;
+}
+
+#welcome-container h1 {
+    padding-bottom: 2vh;
+    font-size: 2.5em;
+}
+
+#description {
+    font-size: 16px;
+}
+
+#skills {
+    width: 90%;
+    margin: auto;
+    padding-top: 60px;
+    height: auto;
+    border-bottom: 2px white solid;
+}
+
+#skills h2 {
+    padding-left: 15px;
+    margin-left: 5vw;
+    margin-top: 40px;
+    margin-bottom: 5vh;
+    display: inline-block;
+    width: 200px;
+    border-left: turquoise 5px solid;
+}
+
+#skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-box {
+    width: 200px;
+    height: 150px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.skills-box i {
+    font-size: 3.5em;
+    transition: .5s;
+}
+
+.skills-box p {
+    font-size: 20px;
+}
+
+i.devicon-html5-plain:hover {
+    color: #E44D26;
+}
+
+i.devicon-css3-plain:hover {
+    color: #1572B6;
+}
+
+i.devicon-javascript-plain:hover {
+    color: #F0DB4F;
+}
+
+i.devicon-bootstrap-plain:hover {
+    color: #5B4282;
+}
+
+i.devicon-sass-original:hover {
+    color: #CB6699;
+}
+
+i.devicon-jquery-plain:hover {
+    color: #0868AC;
+}
+
+i.devicon-react-original:hover {
+    color: #61DAFB;
+}
+
+i.devicon-git-plain:hover {
+    color: #F34F29;
+}
+
+i.devicon-github-original:hover {
+    color: #181616;
+}
+
+#projects {
+    width: 90%;
+    margin: 0 auto 10px auto;
+    padding-top: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#projects h2 {
+    padding-left: 15px;
+    line-height: 1.4;
+    margin-left: 5vw;
+    margin-top: 40px;
+    margin-bottom: 5vh;
+    display: inline-block;
+    width: 200px;
+    border-left: turquoise 5px solid;
+}
+
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: auto auto;
+    column-gap: 5%;
+    row-gap: 5vh;
+}
+
+.project-tile {
+    background-color: rgb(70, 69, 69);
+    transition: all .2s ease-in-out;
+}
+
+.project-tile:hover {
+    box-shadow: 0 0 11px rgba(156, 156, 156, 0.767);
+    transform: scale(1.02);
+}
+
+.project-tile a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
+}
+
+.project-image img {
+    width: 100%;
+}
+
+#repo {
+    border: none;
+    background-color: hsl(167, 84%, 66%);
+    box-shadow: 0 0 5px hsl(157, 73%, 76%);
+    transition: all 0.3s ease;
+    padding: 10px;
+    position: relative;
+    left: calc(50% - 100px);
+    text-align: center;
+    width: 200px;
+    margin: 5vh 0 10vh 0;
+}
+
+#repo:hover {
+    box-shadow: 0 0 10px hsl(157, 73%, 76%), 0 0 20px hsl(157, 73%, 76%), 0 0 20px #fff inset;
+}
+
+#repo a {
+    text-decoration: none;
+    text-align: center;
+}
+
+#contact {
+    background: linear-gradient(rgba(29, 69, 75, 0.6), rgba(29, 69, 75, 0.6)), url("/assets/images/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+#contact-container {
+    width: 90%;
+    height: 70vh;
+    /* background: #1e2a3a; */
+    position: relative;
+    /* top: 10vh; */
+    margin: auto;
+}
+
+#contact-container h2 {
+    padding-left: 15px;
+    line-height: 1.4;
+    margin-left: 5vw;
+    margin-top: 40px;
+    margin-bottom: 5vh;
+    display: inline-block;
+    width: 400px;
+    border-left: turquoise 5px solid;
+}
+
+#form-container {
+    max-width: 70%;
+    background: #2d4a57;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    display: grid;
+    row-gap: 1vh;
+    grid-template-areas:
+        "name email"
+        "message message"
+    ;
+}
+
+#name-container {
+    grid-area: name;
+    padding: 10px;
+}
+
+#email-container {
+    grid-area: email;
+    padding: 10px;
+}
+
+#message-container {
+    grid-area: message;
+    padding: 10px;
+}
+
+textarea {
+    height: 25vh;
+}
+
+#name, #email, #message {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: aliceblue;
+    font-size: 15px;
+    border: transparent;
+}
+
+#submit {
+    margin-left: 10px;
+    width: 150px;
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(167, 84%, 66%);
+    border-radius: 5px;
+    border: transparent;
+    cursor: pointer;
+    transition: all .3s;
+    font-size: 15px;
+}
+
+#submit:hover {
+    background: turquoise;
+}
+
+footer {
+    width: 100%;
+}
+
+#social-media {
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.644);
+}
+
+#social-media a i {
+    color: white;
+    font-size: 2em;
+    padding: 20px;
+    transition: .4s;
+}
+
+#social-media a i:hover {
+    color: turquoise;
+}
+
+#copyright {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 950px) {
+    #form-container {
+        grid-template-areas:
+            "name"
+            "email"
+            "message";
+    }
+}
+
+@media (max-width: 800px) {
+    #navbar-sm {
+        display: none;
+    }
+
+    #about-title {
+        font-size: 1em;
+    }
+
+    #welcome-container h1 {
+        font-size: 2em;
+    }
+
+    #contact-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 670px) {
+    #navbar {
+        text-align: center;
+    }
+
+    #description {
+        font-size: 14px;
+    }
+
+    #contact-container {
+        width: 100%;
+    }
+
+    #form-container {
+        max-width: 100%;
+        background: transparent;
+        margin-bottom: 0;
+    }
+
+    #copyright {
+        font-size: 10px;
+    }
+}
+
+@media (max-height: 920px) {
+    #contact-container {
+        height: 90vh;
+    }
+}
+
+@media (max-height: 670px) {
+    #contact-container {
+        height: 100vh;
+    }
+}
