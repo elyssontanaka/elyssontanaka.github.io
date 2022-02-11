@@ -60,6 +60,10 @@ html, body {
     padding: 10px 0 10px 10px;
 }
 
+a:active {
+    color: black;
+}
+
 #navbar-sm {
     float: right;
     padding: 15px;
@@ -236,6 +240,11 @@ i.devicon-github-original:hover {
 
 .project-image img {
     width: 100%;
+}
+
+.project-name {
+    line-height: 1.6;
+    padding: 3px 0 5px 0;
 }
 
 #repo {
